@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Noah Grotesque";
+  src: url("./fonts/Noah\ Grotesque\ Light.woff"); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "Noah Grotesque Regular";
+  src: url("./fonts/Noah\ Grotesque\ Regular.woff"); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "Noah Grotesque Extra Bold";
+  src: url("./fonts/Noah\ Grotesque\ ExtraBold.woff"); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "Noah Grotesque Bold";
+  src: url("./fonts/Noah\ Grotesque\ Bold.woff"); /* IE9 Compat Modes */
+}
+
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background: #d3a657d1 !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.blur {
+  background: #7b7a7ac4;
+  transition: all 0.4s;
+  position: relative;
+  img {
+    opacity: 0.5;
+  }
+}
+
+#__react-alert__ {
+  div {
+    div {
+      div {
+        background: #6bc9cac9 !important;
+        color: white;
+        top: 50px !important;
+        position: relative !important;
+        svg {
+          fill: black !important;
+          stroke: white !important;
+        }
+      }
+    }
+  }
+}
+
+// .product-names li ul li {
+//   font-family: "Noah Grotesque", sans-serif;
+// }
+
+.loader {
+  text-align: -webkit-center;
+  top: 20rem;
+  position: relative;
+  h1 {
+    position: relative;
+    left: 30px;
+    font-size: 30px;
+    font-family: Quickpen;
+    color: black;
+    text-align: center;
+  }
+}
+
+.modal-open {
+  overflow: unset !important;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  color: #828282;
+  font-family: "Noah Grotesque Regular";
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+a {
+  color: rgb(130, 130, 130);
+}
+a:hover {
+  color: rgb(130, 130, 130);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #828282;
+  font-family: "Noah Grotesque Bold";
+}
+
+.react-slider {
+  margin-bottom: 15% !important;
+  margin-top: 30px;
+}
+.react-slider__ul {
+  display: none !important;
+  z-index: 1 !important;
+  width: 195%;
+  position: absolute;
+  margin-top: 70px !important;
+}
+
+.react-slider__picture {
+  height: 480px;
+}
+
+.react-slider__imgZoom {
+  width: 100% !important;
+  height: 480px;
+}
+.ant-input-group-addon {
+  background-color: transparent !important;
+}
+.process-img {
+  width: 100%;
+  text-align: -webkit-center;
+  margin-bottom: 10rem;
+  .our-process {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-family: "Noah Grotesque";
+    color: #d7af68;
+    text-transform: uppercase;
+    text-decoration: revert;
+    letter-spacing: 3px;
+  }
+  .img-and-text {
+    position: relative;
+    width: 730px;
+
+    img {
+      width: 730px;
+    }
+  }
+}
+.bm-menu-wrap,
+.bm-overlay {
+  position: relative;
+  top: 0;
+}

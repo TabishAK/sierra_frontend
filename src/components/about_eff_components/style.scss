@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Quickpen";
+  src: url("../../fonts/quickpen/Trial\ by\ Cupcakes\ -\ Quickpen.woff");
+}
+
+p {
+  line-height: 30px;
+}
+
+.section-1 {
+  .bg-1 {
+    background: url("../../images/about_eff/backgrounds/about_bg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: contain;
+    height: 40rem;
+  }
+  .para-without-image {
+    line-height: 35px;
+  }
+
+  .para-with-image {
+    display: flex;
+    p {
+      margin-right: 15px;
+    }
+    img {
+      padding: 12px 8px 10px 1px;
+      border: 2px solid gainsboro;
+      height: 155px;
+      width: 25%;
+    }
+  }
+  h1 {
+    margin-top: 5rem;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: "Noah Grotesque";
+    color: #d7af68;
+    text-transform: uppercase;
+    text-decoration: revert;
+    letter-spacing: 3px;
+  }
+}
+
+.section-2 {
+  div {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    margin-top: 0rem;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: "Noah Grotesque";
+    color: #d7af68;
+    text-transform: uppercase;
+    text-decoration: revert;
+    letter-spacing: 3px;
+  }
+}
+
+.section-3 {
+  position: relative;
+  .row {
+    position: relative;
+    // top: 60px;
+    div {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  h6 {
+    // top: 75px;
+    position: relative;
+  }
+  h1 {
+    margin-top: 5rem;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: "Noah Grotesque";
+    color: #d7af68;
+    text-transform: uppercase;
+    text-decoration: revert;
+    letter-spacing: 3px;
+  }
+  p {
+    // top: 60px;
+    position: relative;
+  }
+}
+
+.section-4 {
+  position: relative;
+  .row {
+    position: relative;
+    // top: 60px;
+    div {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.section-5 {
+  position: relative;
+
+  h1 {
+    font-family: Quickpen;
+  }
+  .row {
+    position: relative;
+    // top: 60px;
+    div {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

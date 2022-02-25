@@ -1,0 +1,104 @@
+.brouchers {
+  height: 28rem;
+  position: relative;
+  background-image: url("../../images/backgrounds/gray_background.jpg");
+  background-size: cover;
+
+  .broucher-card {
+    margin-top: 6%;
+    .row {
+      justify-content: center;
+      text-align: center;
+
+      .col-xl-4 {
+        margin-bottom: 6rem !important;
+      }
+      .sub-cat-name {
+        text-align: center;
+        margin-top: 0rem !important;
+        margin-bottom: 1rem !important;
+        font-size: 18px;
+        font-weight: bolder;
+        font-family: "Noah Grotesque";
+        color: #828282;
+        text-transform: uppercase;
+        text-decoration: revert;
+        letter-spacing: 2px;
+      }
+      img {
+        border: solid 3px white;
+        box-shadow: 3px 3px 4px #888;
+        width: 90%;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        svg {
+          margin: 4px;
+        }
+      }
+    }
+  }
+
+  .broucher-heading {
+    h1 {
+      text-align: center;
+      margin-top: 0rem !important;
+      margin-bottom: 10rem !important;
+      font-size: 40px;
+      font-weight: bolder;
+      font-family: "Noah Grotesque";
+      color: #d7af68;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    h5 {
+      color: black;
+    }
+  }
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s;
+}
+// at start
+.image__overlay {
+  opacity: 0;
+}
+
+// on hover
+.image__overlay:hover {
+  opacity: 1;
+}
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image__overlay--solid {
+  background: #c51f5d;
+}

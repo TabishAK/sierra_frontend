@@ -1,0 +1,107 @@
+.production-and-quality {
+  .info-panel-images .card-1 .view-first {
+    h2 {
+      margin-top: 8rem;
+    }
+
+    .mask a {
+      top: 10px !important;
+    }
+  }
+
+  .info-panel-images {
+    position: relative;
+    top: 0 !important;
+    margin-top: 5rem;
+  }
+
+  .service-name {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-family: "Noah Grotesque";
+    color: #d7af68;
+    text-transform: uppercase;
+    text-decoration: revert;
+    letter-spacing: 3px;
+  }
+
+  .production-process-1 {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+
+    h1 {
+      text-align: left;
+      color: #db9e33;
+      font-size: 24px;
+    }
+    p {
+      width: 120px;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: left;
+      left: -5px;
+      position: relative;
+    }
+  }
+  .production-process-2 {
+    position: absolute;
+    top: 140px;
+    right: -35px;
+
+    h1 {
+      text-align: left;
+      color: #db9e33;
+      font-size: 24px;
+    }
+    p {
+      width: 150px;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: left;
+      left: 0px;
+      position: relative;
+    }
+  }
+
+  .production-process-3 {
+    position: absolute;
+    bottom: -120px;
+    left: 20px;
+    h1 {
+      text-align: left;
+      font-size: 24px;
+      color: #db9e33;
+    }
+    p {
+      width: 150px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+      position: relative;
+      left: 0px;
+    }
+  }
+
+  .production-process-4 {
+    position: absolute;
+    bottom: -55px;
+    right: -55px;
+    h1 {
+      text-align: left;
+      color: #db9e33;
+      font-size: 24px;
+    }
+    p {
+      width: 150px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+      position: relative;
+      left: -10px;
+    }
+  }
+}

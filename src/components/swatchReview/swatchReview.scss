@@ -1,0 +1,56 @@
+.swatch-review {
+  margin-top: 20px;
+  max-width: 1180px !important;
+
+  .row {
+    div {
+      ul {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 195%;
+        li {
+          margin: 10px;
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .prod-description {
+      span {
+        display: flex;
+        flex-wrap: nowrap;
+        p {
+          font-size: 14px;
+          margin: 12px 0px;
+          width: 50%;
+        }
+      }
+      h5 {
+        position: relative;
+        top: 7%;
+      }
+    }
+    .col-xl-6 {
+      h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.swatches {
+  .row {
+    .col-2 {
+      img {
+        margin-top: 30px;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}

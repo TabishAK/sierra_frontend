@@ -1,0 +1,63 @@
+.contact-form {
+  .container {
+    .row {
+      position: relative;
+
+      margin-top: 5rem;
+      .col-xl-6 {
+        .contact-us {
+          text-align: left;
+          font-size: 35px;
+          margin-bottom: 2rem;
+          font-weight: bolder;
+          font-family: "Noah Grotesque";
+          color: #d7af68;
+          text-transform: uppercase;
+          text-decoration: revert;
+          letter-spacing: 3px;
+        }
+        .our-capabilities {
+          text-align: left;
+          font-size: 45px;
+          font-weight: bolder;
+          font-family: "Noah Grotesque";
+          color: #d7af68;
+          text-transform: uppercase;
+          text-decoration: revert;
+          letter-spacing: 3px;
+        }
+
+        p {
+          padding-right: 100px;
+          margin-top: 1rem;
+          line-height: 35px;
+        }
+
+        form {
+          display: grid;
+        }
+        label {
+          margin-bottom: 0px;
+        }
+        input {
+          width: 65%;
+          margin-bottom: 16px !important;
+        }
+        button {
+          background: #d3a657;
+          width: 100px;
+          padding: 5px 16px;
+        }
+        textarea {
+          width: 65%;
+          padding: 14px 10px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          margin-top: 8px;
+          border: none;
+          background: #eeeeee;
+        }
+      }
+    }
+  }
+}

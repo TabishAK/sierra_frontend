@@ -1,0 +1,26 @@
+.video-library {
+  .video-library-banner {
+    display: grid;
+    h1 {
+      color: white;
+      font-weight: 1000;
+      margin-top: 14rem;
+      font-size: 70px;
+      font-family: "Quickpen";
+    }
+    h6 {
+      font-weight: 500 !important;
+      font-family: "Raleway";
+      font-size: 16px;
+    }
+  }
+
+  .container {
+    .row {
+      margin-top: 5rem;
+      iframe {
+        width: 100% !important;
+      }
+    }
+  }
+}
