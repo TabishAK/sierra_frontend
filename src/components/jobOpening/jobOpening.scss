@@ -16,32 +16,91 @@
       height: 2px;
     }
   }
+}
 
-  table {
-    border-collapse: collapse;
-    tr {
-      border: 2px solid gainsboro;
-      td {
-        padding: 4rem 6rem 4rem 6rem;
+.contain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  small {
+    font-size: 0.5em;
+  }
+}
+
+.responsive-table {
+  padding: 0;
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    place-items: center;
+  }
+  .table-header {
+    background-color: #c9a05ad9;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: white;
+    font-weight: 500;
+  }
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .col-1 {
+    flex-basis: 10%;
+  }
+  .col-2 {
+    flex-basis: 40%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 25%;
+
+    h5 {
+      cursor: pointer;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+    .table-row {
+    }
+    li {
+      display: block;
+    }
+    .col {
+      flex-basis: 100%;
+    }
+    .col {
+      display: contents;
+      padding: 10px 0;
+      &:before {
+        color: #c9a05ad9;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
       }
+    }
 
-      .job-post {
-        h5 {
-          text-transform: uppercase;
-          font-weight: 700;
-        }
-      }
-
-      .job-type {
-        h5 {
-          position: relative;
-          top: 14px;
-          text-align: center;
-          font-size: 16px;
-          font-family: "Raleway";
-          font-weight: 600;
-          cursor: pointer;
-        }
+    .col-3 {
+      h5 {
+        margin-bottom: 3rem !important;
       }
     }
   }

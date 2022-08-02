@@ -16,6 +16,7 @@ import { GiMedievalBarracks } from "react-icons/gi";
 import { HiPresentationChartLine } from "react-icons/hi";
 import processImage from "../../images/4.jpg";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const TextileDesignService = (props) => {
   const sourcingService = [
@@ -86,45 +87,53 @@ const TextileDesignService = (props) => {
   return spinner ? (
     <SierraLoader />
   ) : (
-    <div className={classNamay}>
-      <Navbar
-        st={props.st}
-        openRightMenu={props.openRightMenu}
-        makeBlur={makeBlur}
-        removeBlur={removeBlur}
-      />
+    <>
+      <Helmet>
+        <title>Sierra Textiles - Services</title>
+        <meta name="description" content={serviceData?.mainParagraph} />
+        <meta name="keywords" content="Production and Quality Control" />
+      </Helmet>
 
-      <h1 className="service-name">Textile And Design Services</h1>
+      <div className={classNamay}>
+        <Navbar
+          st={props.st}
+          openRightMenu={props.openRightMenu}
+          makeBlur={makeBlur}
+          removeBlur={removeBlur}
+        />
 
-      <Services
-        mainParagraph={serviceData.mainParagraph}
-        sourcingService={serviceData.services}
-      />
+        <h1 className="service-name">Textile And Design Services</h1>
 
-      <div className="process-img">
-        <h1 className="our-process">Our Process</h1>
+        <Services
+          mainParagraph={serviceData.mainParagraph}
+          sourcingService={serviceData.services}
+        />
 
-        <div className="img-and-text">
-          <img src={processImage} alt="" />
+        <div className="process-img">
+          <h1 className="our-process">Our Process</h1>
 
-          {serviceData &&
-            serviceData.process.map((sp, i) => (
-              <div className={`textile-process-${i + 1}`}>
-                <h1>{sp.process_name}</h1>
-                <p>{sp.process_description}</p>
-              </div>
-            ))}
+          <div className="img-and-text">
+            <img src={processImage} alt="" />
+
+            {serviceData &&
+              serviceData.process.map((sp, i) => (
+                <div className={`textile-process-${i + 1}`}>
+                  <h1>{sp.process_name}</h1>
+                  <p>{sp.process_description}</p>
+                </div>
+              ))}
+          </div>
         </div>
+
+        <div className="container">
+          <InfoPanelImageSection />
+        </div>
+
+        <ContactForm capabilities={serviceData.capabilities} />
+
+        <Footer />
       </div>
-
-      <div className="container">
-        <InfoPanelImageSection />
-      </div>
-
-      <ContactForm capabilities={serviceData.capabilities} />
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

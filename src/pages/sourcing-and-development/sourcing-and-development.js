@@ -21,6 +21,7 @@ import {
 } from "react-icons/md";
 import { GiSharpShuriken } from "react-icons/gi";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const SourcingAndDevelopment = (props) => {
   const sourcingService = [
@@ -93,42 +94,48 @@ const SourcingAndDevelopment = (props) => {
   return spinner ? (
     <SierraLoader />
   ) : (
-    <div className={classNamay}>
-      <Navbar
-        st={props.st}
-        openRightMenu={props.openRightMenu}
-        makeBlur={makeBlur}
-        removeBlur={removeBlur}
-      />
-      <h1 className="service-name">Sourcing and Product Development</h1>
-      <Services
-        mainParagraph={serviceData.mainParagraph}
-        sourcingService={serviceData.services}
-      />
+    <>
+      <Helmet>
+        <title>Sierra Textiles - Services</title>
+        <meta name="description" content={serviceData?.mainParagraph} />
+      </Helmet>
+      <div className={classNamay}>
+        <Navbar
+          st={props.st}
+          openRightMenu={props.openRightMenu}
+          makeBlur={makeBlur}
+          removeBlur={removeBlur}
+        />
+        <h1 className="service-name">Sourcing and Product Development</h1>
+        <Services
+          mainParagraph={serviceData.mainParagraph}
+          sourcingService={serviceData.services}
+        />
 
-      <div className="process-img">
-        <h1 className="our-process">Our Process</h1>
+        <div className="process-img">
+          <h1 className="our-process">Our Process</h1>
 
-        <div className="img-and-text">
-          <img src={processImage} alt="" />
+          <div className="img-and-text">
+            <img src={processImage} alt="" />
 
-          {serviceData.process.map((sp, i) => (
-            <div className={`development-process-${i + 1}`}>
-              <h1>{sp.process_name}</h1>
-              <p>{sp.process_description}</p>
-            </div>
-          ))}
+            {serviceData.process.map((sp, i) => (
+              <div className={`development-process-${i + 1}`}>
+                <h1>{sp.process_name}</h1>
+                <p>{sp.process_description}</p>
+              </div>
+            ))}
+          </div>
         </div>
+
+        <div className="container">
+          <InfoPanelImageSection />
+        </div>
+
+        <ContactForm capabilities={serviceData.capabilities} />
+
+        <Footer />
       </div>
-
-      <div className="container">
-        <InfoPanelImageSection />
-      </div>
-
-      <ContactForm capabilities={serviceData.capabilities} />
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

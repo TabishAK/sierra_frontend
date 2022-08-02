@@ -76,6 +76,13 @@ p {
       padding-left: 0px !important;
       img {
         width: 100%;
+        border: 3px solid #ffffff !important;
+        cursor: pointer;
+      }
+
+      img:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
       }
     }
   }

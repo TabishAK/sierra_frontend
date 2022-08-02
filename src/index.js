@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -10,6 +9,7 @@ import { positions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
+import ReactDOM from "react-dom";
 
 const options = {
   position: positions.TOP_LEFT,

@@ -14,15 +14,15 @@ const ContactForm = (props) => {
             </h2>
 
             <form>
-              <label>Name</label>
+              {/* <label>Name</label> */}
               <input placeholder="Name" name="" />
-              <label>Email</label>
+              {/* <label>Email</label> */}
               <input placeholder="Email" name="" />
-              <label>Phone no</label>
+              {/* <label>Phone no</label> */}
               <input placeholder="Phone no" name="" />
-              <label>Message</label>
+              {/* <label>Message</label> */}
               <textarea placeholder="Message" name="" />
-              <button className="btn btn-sm">Submit</button>
+              <button className="btn btn-sm mt-2">Submit</button>
             </form>
           </div>
         </div>

@@ -7,7 +7,7 @@
   margin: 10px;
   min-width: 230px;
   max-width: 280px;
-  width: 100%;
+  width: 93%;
   color: #ffffff;
   font-size: 16px;
   text-align: left;
@@ -40,9 +40,11 @@
   overflow-y: hidden !important;
 }
 .slick-next {
+  z-index: 1;
   right: 0px !important;
 }
 .slick-prev {
+  z-index: 1;
   left: -10px !important;
 }
 .snip1584 img {

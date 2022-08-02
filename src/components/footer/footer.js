@@ -17,25 +17,44 @@ const Footer = () => {
   return (
     <div className="footer container-fluid">
       <div className="row mt-4  ml-5">
-        <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 mt-4 column-1">
+        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-4 column-1">
           <ul>
-            <label>PRODUCTS</label>
-            <li>Curtain and drapes</li>
-            <li>Home Decore</li>
-            <li>Bedding</li>
-            <li>Hardware</li>
+            <label>Services</label>
+            <li>
+              <Link to="/sourcing-and-development">
+                Sourcing and Product Development
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/production-and-quality">
+                Production and Quality Control
+              </Link>
+            </li>
+            <li>
+              <Link to="/textile-design-service"> Textile Design Services</Link>
+            </li>
+            <li>
+              <Link to="/digital-merchandising-service">
+                Digital Merchandising Services
+              </Link>
+            </li>
           </ul>
           <ul className="mt-5">
             <label>COMPANY</label>
-            <li>About Sierra Textiles</li>
-            <li>Terms and conditions</li>
-            <li>Facilities</li>
-            <li>Careers</li>
-            <li>Legal</li>
+            <li>
+              <Link to="/about">About Sierra Textiles</Link>
+            </li>
+            <li>
+              <Link to="/contact_us"> Contact Us</Link>
+            </li>
+            <li>
+              <Link to="/careers">Careers</Link>
+            </li>
           </ul>
         </div>
 
-        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-4 column-2">
+        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-4 column-2">
           <ul className="connect-with-us">
             <label>CONNECT WITH US</label>
             <p>Join Our Community!</p>
@@ -48,22 +67,47 @@ const Footer = () => {
             <label>SOCIAL SHARE</label>
             <div className="social-media mt-2 mb-2">
               <span>
-                <FaFacebookSquare />
+                <Link
+                  to={{
+                    pathname: "https://www.facebook.com/sierratextileofficial	",
+                  }}
+                  target="_blank"
+                >
+                  <FaFacebookSquare />
+                </Link>
+              </span>
+
+              <span>
+                <Link
+                  to={{
+                    pathname: "https://twitter.com/TextileSierra",
+                  }}
+                  target="_blank"
+                >
+                  <AiOutlineTwitter />
+                </Link>
+              </span>
+
+              <span>
+                <Link
+                  to={{
+                    pathname:
+                      "https://www.youtube.com/channel/UCBbnXQapdll1Tf8A1UyoPoA",
+                  }}
+                  target="_blank"
+                >
+                  <FaYoutube />
+                </Link>
               </span>
               <span>
-                <FiInstagram />
-              </span>
-              <span>
-                <AiOutlineTwitter />
-              </span>
-              <span>
-                <FaPinterestP />
-              </span>
-              <span>
-                <FaYoutube />
-              </span>
-              <span>
-                <FaLinkedin />
+                <Link
+                  to={{
+                    pathname: "https://www.linkedin.com/company/79144784	",
+                  }}
+                  target="_blank"
+                >
+                  <FaLinkedin />
+                </Link>
               </span>
             </div>
           </ul>
@@ -84,7 +128,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          © 2022 Sierra Textile | B-75/280, Sector A, Street # 3, Kashmir
+          © 2022 Sierra Textiles | B-75/280, Sector A, Street # 3, Kashmir
           Colony, Karachi, Sindh, Pakistan.
         </p>
 

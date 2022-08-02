@@ -48,8 +48,8 @@ const Brouchers = (props) => {
         <div className="row">
           {categories &&
             categories.map((c) =>
-              c.subCategory_image ? (
-                <div className="col-xl-4 col-lg-4 col-md-6 mb-5">
+              c.subCategory_image && c.pdf !== "undefined" ? (
+                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-5">
                   <center>
                     <p className="sub-cat-name">{c.subCategory_name}</p>
                   </center>

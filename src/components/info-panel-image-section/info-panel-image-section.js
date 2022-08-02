@@ -1,5 +1,5 @@
 import "./info-panel-image-section.scss";
-import hpd from "../../images/logo/hpd.png";
+import roklin from "../../images/logo/roklin.png"
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -22,12 +22,12 @@ const InfoPanelImageSection = () => {
   return (
     <div className="row info-panel-images">
       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 card-1">
-        <div id="all">
+        <div id="all" style={{height: "100%"}}>
           <div className="view view-first">
-            <img src={hpd} alt="" />
+            <img src={roklin} alt="" />
 
             <div className="mask">
-              <h2>Half Price Drapes</h2>
+              <h2>Roklin</h2>
               <p>
                 External household spaces are rapidly transitioning into a
                 sanctum exuding style and sophistication. These fashionable

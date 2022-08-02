@@ -36,13 +36,23 @@
   img {
     opacity: 0.5;
   }
+  .service-card {
+    opacity: 0.3;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    opacity: 0.3;
+  }
 }
 
 #__react-alert__ {
   div {
     div {
       div {
-        background: #6bc9cac9 !important;
+        background: #d3a656 !important;
         color: white;
         top: 50px !important;
         position: relative !important;

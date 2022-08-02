@@ -7,10 +7,6 @@
     display: none !important;
   }
 
-  .container {
-    max-width: 1420px;
-  }
-
   .swatches {
     .footer {
       margin-top: 30% !important;
@@ -69,16 +65,16 @@
     }
 
     .ant-input-group-wrapper {
-      margin-left: 90px;
+      margin-left: 90px !important;
       width: 75% !important;
       position: relative;
     }
 
     img {
-      left: 7%;
-      top: -40px;
+      left: 7% !important;
+      top: -40px !important;
       position: relative;
-      width: 28rem;
+      width: 28rem !important;
     }
     .row ul {
       margin: 30px 0px !important;
@@ -97,6 +93,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .information-panel .logo-black {
+    top: -25px;
+    position: relative;
+    width: 55% !important;
+    margin-bottom: -8rem !important;
+  }
+
   .digital-merchandising-service .merchandising-process-1 {
     top: 130px !important;
     left: 5px !important;
@@ -311,8 +314,26 @@
   .bg-1 {
     display: none !important;
   }
+  .newsletter-subscription {
+    .ant-input-group-wrapper {
+      width: 65% !important;
+    }
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .info-panel-images .card-1 .view-first img {
+    transition: all 0.2s linear;
+    width: 55%;
+    top: 0%;
+  }
+
+  .information-panel .logo-black {
+    top: -25px !important;
+    position: relative;
+    width: 70% !important;
+    margin-bottom: -10rem !important;
+  }
+
   .digital-merchandising-service .merchandising-process-1 {
     top: 100px !important;
     left: -30px !important;
@@ -663,20 +684,16 @@
 
   .brouchers .broucher-card .row .sub-cat-name {
     margin-bottom: 30px;
-    font-size: 28px !important;
-    color: black;
-    font-family: "Quickpen";
-    border-bottom: 1px solid;
+    font-size: 22px !important;
     width: -moz-fit-content;
+    white-space: nowrap;
     margin-top: 22px;
     width: fit-content;
   }
 
   .brouchers .broucher-heading h1 {
-    color: black;
     text-align: center;
     margin-top: -32px;
-    font-family: "Quickpen";
     font-weight: bolder;
     margin-bottom: 109px;
   }
@@ -827,9 +844,37 @@
 }
 
 @media (max-width: 575px) {
+  .query-form {
+    text-align: -webkit-center;
+  }
+  .container-changed span {
+    top: 0 !important;
+    font-size: 12px;
+    width: 100px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  .login-form-heading {
+    display: none;
+  }
+
+  .name-section {
+    display: grid;
+  }
+
+  .for-login .form-box {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .ant-input-group-wrapper {
+    width: 85% !important;
+  }
+
   .about-eff h1 {
     font-size: 30px !important;
-    text-align: center;
+    text-align: center !important;
   }
 
   .digital-merchandising-service .merchandising-process-1 {
@@ -1164,22 +1209,29 @@
   }
   .nav-bar .admin-controls {
     position: absolute !important;
-    top: 37px;
-    right: 5px;
+    top: 60px !important;
+    right: 12px !important;
+    ul {
+      li {
+        svg {
+          color: #d3a656 !important;
+        }
+      }
+    }
   }
   .bm-burger-button {
     width: 30px;
     height: 24px;
-    left: 10px;
-    top: 40px;
+    left: 15px;
+    top: 65px;
   }
   .nav-bar .logo-section img {
     cursor: pointer;
-    width: 180px;
+    width: 90% !important;
     position: relative;
-    top: -25px;
-    z-index: 1;
-    height: 155px;
+    top: -60px !important;
+    z-index: 0 !important;
+    height: 100% !important;
   }
 
   .contact-page {
@@ -1226,7 +1278,7 @@
 
   form {
     background-color: #ffffff;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -1234,6 +1286,10 @@
     padding: 0 0px;
     height: 100%;
     text-align: center;
+
+    label {
+      display: none;
+    }
   }
   .login-form-heading {
     font-size: 20px !important;
@@ -1250,7 +1306,9 @@
 
   .login-btn {
     font-size: 11px;
-    padding: 11px 22px;
+    width: max-content;
+    padding: 8px 18px;
+    margin-bottom: 1rem;
   }
   .overlay-panel {
     padding: 0 15px !important;
@@ -1268,9 +1326,12 @@
     padding: 6px 8px !important;
   }
   .fabric .description {
-    height: 50rem;
-  }
+    height: 48rem !important;
 
+    .download-broucher {
+      margin-left: 30% !important;
+    }
+  }
   .fabric .sub-category-name {
     margin-left: 7%;
     font-size: 235%;
@@ -1289,7 +1350,7 @@
     font-size: 45px;
   }
   .fabric .image img {
-    height: 20rem;
+    height: 20rem !important;
   }
   .swatch-review .row div ul {
     margin-top: 165% !important;
@@ -1352,8 +1413,8 @@
   }
   .information-panel {
     .logo-black {
-      width: 72%;
-      top: 60px;
+      width: 100% !important;
+      top: 0px;
     }
     .info-panel-images .card-1 .view p {
       font-family: sans-serif !important;
@@ -1373,10 +1434,9 @@
       ul {
         line-height: 2rem;
         text-align: center;
-        display: grid;
+        display: grid !important;
         margin-bottom: 18px !important;
         position: relative;
-        left: -20px;
 
         li {
           margin: 0px 25px 0px 0px !important;
@@ -1400,16 +1460,15 @@
     }
 
     img {
-      top: 0px;
-      width: 190px;
-      height: 170px;
-      left: 35px;
+      top: 0px !important;
+      width: 100% !important;
+      left: 0 !important;
     }
     .row {
       margin-left: 20px !important;
 
       ul {
-        margin: 20px 0px 0px -70px;
+        margin: 20px 0px 0px -70px !important;
         text-align: center;
       }
     }
@@ -1446,7 +1505,8 @@
             }
             .mask a {
               position: relative;
-              top: -55px;
+              top: -45px;
+              font-size: 12px;
             }
           }
         }

@@ -123,22 +123,30 @@ const Sideba = () => {
                 <>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Sourcing and Product Development</Link>
+                      <Link to="/sourcing-and-development">
+                        Sourcing and Product Development
+                      </Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Production and Quality Control</Link>
+                      <Link to="/production-and-quality">
+                        Production and Quality Control
+                      </Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Textile Design Services</Link>
+                      <Link to="/textile-design-service">
+                        Textile Design Services
+                      </Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Digital Merchandising Services</Link>
+                      <Link to="/digital-merchandising-service">
+                        Digital Merchandising Services
+                      </Link>
                     </div>
                   </li>
                 </>
@@ -146,17 +154,17 @@ const Sideba = () => {
                 <>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Show Brouchers</Link>
+                      <Link to="/brouchers">Show Brouchers</Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Video Library</Link>
+                      <Link to="/video-library">Video Library</Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Blogs</Link>
+                      <Link to="/blogs">Blogs</Link>
                     </div>
                   </li>
                 </>
@@ -164,27 +172,27 @@ const Sideba = () => {
                 <>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">About Us</Link>
+                      <Link to="/about">About Us</Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Leadership</Link>
-                    </div>
-                  </li>{" "}
-                  <li className="sub-categories">
-                    <div>
-                      <Link to="">Facilities</Link>
+                      <Link to="/leadership">Leadership</Link>
                     </div>
                   </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Careers</Link>
+                      <Link to="/facilities">Facilities</Link>
                     </div>
-                  </li>{" "}
+                  </li>
                   <li className="sub-categories">
                     <div>
-                      <Link to="">Contact Us</Link>
+                      <Link to="/careers">Careers</Link>
+                    </div>
+                  </li>
+                  <li className="sub-categories">
+                    <div>
+                      <Link to="/contact_us">Contact Us</Link>
                     </div>
                   </li>
                 </>

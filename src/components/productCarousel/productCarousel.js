@@ -48,7 +48,7 @@ var News = createClass({
     if (data && data.length > 0) {
       newsTemplate = data.map(function (item, index) {
         return (
-          <div key={index}>
+          <div style={{ width: 90 }} key={index}>
             <Article
               data={item}
               index={index}

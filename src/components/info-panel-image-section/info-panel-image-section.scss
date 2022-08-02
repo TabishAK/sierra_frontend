@@ -80,10 +80,14 @@
       box-shadow: 0 0 5px #000;
     }
 
-    .view-first img {
+    .view-first {
+       height: 98%;
+       text-align: -webkit-center;
+      img {
       transition: all 0.2s linear;
-      width: 81%;
-    }
+      width: 70%;
+      top: 10%;
+    }}
 
     .view-first .mask {
       opacity: 0;

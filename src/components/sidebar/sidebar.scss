@@ -22,12 +22,12 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #6bc9ca;
+  background: #d3a656;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #6bc9ca;
+  background: #d3a656;
 }
 
 /* Position and sizing of clickable cross button */
@@ -132,4 +132,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: gainsboro;
   line-height: 28px;
   font-family: "Noah Grotesque Regular";
+  div {
+    a {
+      color: gainsboro !important;
+    }
+  }
 }

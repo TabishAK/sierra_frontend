@@ -173,7 +173,7 @@ const Facilities = (props) => {
               <h1>Searching for Work?</h1>
 
               <p>
-                Join Sierra Textile and Fabrics and expand your potential with
+                Join Sierra Textiles and Fabrics and expand your potential with
                 our entrepreneurial endeavors and become part of the acclaimed
                 enterprise. All you need to have is commitment, faith and desire
                 to succeed. Send us your resume.

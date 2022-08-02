@@ -12,6 +12,7 @@
 
       .col-xl-4 {
         margin-bottom: 6rem !important;
+        text-align: -webkit-center;
       }
       .sub-cat-name {
         text-align: center;
@@ -74,7 +75,7 @@
 .image__overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 25px;
   width: 90%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);

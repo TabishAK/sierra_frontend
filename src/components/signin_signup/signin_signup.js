@@ -121,7 +121,7 @@ const Signin_Signup = (props) => {
             slugForBroucher: location.pathname,
           });
         })
-        .catch((error) => setError(error.response.data));
+        .catch((error) => setError(error.message));
     }
   };
 

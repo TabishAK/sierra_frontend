@@ -35,7 +35,7 @@
   }
   .ant-input-group-wrapper {
     margin-left: 262px;
-    width: 50% !important;
+    width: 50%;
     position: relative;
   }
   hr {
@@ -54,7 +54,8 @@
   .row {
     .connect-with-us {
       p {
-        margin: -8px 0px;
+        margin: 5px 0px;
+        line-height: 20px;
         font-size: 16px;
       }
     }
@@ -79,7 +80,7 @@
 
   .social-media {
     span {
-      margin: 0 16px 0 2px;
+      margin: 0 12px 0 2px;
       svg {
         color: #808080a6;
         font-size: 24px;

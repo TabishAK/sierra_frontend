@@ -28,11 +28,16 @@
 }
 
 .nav-bar .menus .where-to-buy li {
-  margin: 0px 45px !important;
+  margin: 0px 40px !important;
   width: max-content;
   position: relative;
   cursor: pointer;
   top: 32%;
+
+  a {
+    font-weight: 400 !important;
+    font-size: 16px;
+  }
 
   ul {
     margin: 8px -85px !important;
@@ -324,7 +329,7 @@
         color: white;
         width: max-content;
         padding: 0px 28px;
-        font-size: 16px;
+        font-size: 1em;
       }
     }
   }
@@ -344,7 +349,7 @@
         padding: 12px;
         position: absolute;
         width: -moz-fit-content;
-        width: 110px;
+        width: 115px;
         border-radius: 5px;
         font-size: 13px;
         left: -10px;

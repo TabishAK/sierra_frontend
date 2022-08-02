@@ -100,7 +100,9 @@ const AdminControls = (props) => {
                   <li onClick={handleLoginClick}> Login</li>
                 )}
               </center>
-              <li>Careers</li>
+              <li>
+                <Link to="/careers">Careers</Link>
+              </li>
               <li>
                 <Link to="/brouchers">Brouchers</Link>
               </li>

@@ -1,2 +1,17 @@
 .careers {
+  @media all and (max-width: 767px) {
+    .wordCarousel div {
+      left: -65px;
+    }
+  }
+
+  @media all and (max-width: 576px) {
+    .wordCarousel div {
+      left: -40px !important;
+    }
+
+    .background-careers .heading-for-career p {
+      margin-top: 8rem;
+    }
+  }
 }

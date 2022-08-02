@@ -11,7 +11,6 @@ const SignupForm = (props) => {
   const location = useLocation();
   const [error, setError] = useState();
   const alert = useAlert();
-  const [userID, setUserID] = useState();
 
   let [applyFormData, setApplyFormData] = useState({
     first_name: "",
@@ -20,13 +19,9 @@ const SignupForm = (props) => {
     contact_no: "",
     job_post: props.jobPost,
     resume: null,
-    userID: userID,
   });
 
   useEffect(() => {
-    if (props.token !== null) {
-      setUserID(jwt_decode(props.token));
-    }
     setApplyFormData({
       first_name: "",
       last_name: "",
@@ -34,7 +29,6 @@ const SignupForm = (props) => {
       contact_no: "",
       job_post: props.jobPost,
       resume: null,
-      userID: userID && userID.id,
     });
   }, [props.isShowApplyForm, props.token]);
 
@@ -48,7 +42,6 @@ const SignupForm = (props) => {
     contact_no: Joi.string().required().label("Contact Number"),
     job_post: Joi.string(),
     resume: Joi.allow("").required(),
-    userID: Joi.allow("").required(),
   };
 
   function validate() {
@@ -75,7 +68,6 @@ const SignupForm = (props) => {
     formData.append("contact_no", applyFormData.contact_no);
     formData.append("job_post", applyFormData.job_post);
     formData.append("resume", applyFormData.resume);
-    formData.append("userID", applyFormData.userID);
 
     axios
       .post(
@@ -189,6 +181,7 @@ const SignupForm = (props) => {
                     fontWeight: "400",
                   }}
                   type="text"
+                  placeholder="Job Post"
                   value={props.jobPost}
                   name="jobPost"
                   className="login-box mb-4"

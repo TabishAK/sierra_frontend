@@ -105,7 +105,60 @@ const JobOpening = (props) => {
             <hr />
           </div>
 
-          <table className="mt-5">
+          <div class="container contain">
+            <ul class="responsive-table">
+              <div className="for-apply" ref={ref}>
+                <ApplyForm
+                  setIsShowApplyForm={setIsShowApplyForm}
+                  token={token}
+                  jobPost={jobPost}
+                  isShowApplyForm={isShowApplyForm}
+                  closeSigninModal={closeSigninModal}
+                />
+              </div>
+              <li class="table-header">
+                <div class="col col-1">Designation</div>
+                <div class="col col-2">Location</div>
+                <div class="col col-3">Job Type</div>
+                <div class="col col-4">Apply</div>
+              </li>
+
+              {props.jobs &&
+                props.jobs.map((job) => (
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Designation">
+                      <h5> {job.job_name}</h5>
+                      <p> {job.designation_name}</p>
+                    </div>
+                    <div class="col col-2" data-label="Location">
+                      <h5>{job.area}</h5>
+                      <p>{job.country}</p>
+                    </div>
+                    <div class="col col-3" data-label="Job Type">
+                      <h5>{job.job_type}</h5>
+                    </div>
+                    <div class="col col-4" data-label="">
+                      <span
+                        style={{
+                          cursor: "pointer",
+                          background: "#d9b473",
+                          padding: "8px 18px",
+                          fontFamily: "Raleway",
+                          borderRadius: 8,
+                          color: "white",
+                          fontWeight: 500,
+                        }}
+                        onClick={() => handleApplyForm(job.jobPost)}
+                      >
+                        Apply
+                      </span>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </div>
+
+          {/* <table className="mt-5">
             <div className="for-apply" ref={ref}>
               <ApplyForm
                 setIsShowApplyForm={setIsShowApplyForm}
@@ -162,7 +215,7 @@ const JobOpening = (props) => {
                   </td>
                 </tr>
               ))}
-          </table>
+          </table> */}
         </center>
       </div>
     </>
